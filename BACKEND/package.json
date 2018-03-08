@@ -1,0 +1,24 @@
+{
+  "name": "videoclub",
+  "version": "1.0.0",
+  "description": "Gestion VideoClub",
+  "main": "index.js",
+  "scripts": {
+    "test": "sin testeo",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "mongo"
+  ],
+  "author": "Daniel",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.11"
+  }
+}

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      VideoClub IONIC
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <button ion-button color="dark" (click)="insertarPelicula()" class="insertar">Añadir Película</button>          
+
+          <ion-item *ngFor = "let pelicula of peliculas">           
+
+            <ion-avatar item-start>
+                <img [src]="pelicula.foto">
+            </ion-avatar>
+
+          <div class = "color">
+            <h2>{{pelicula.titulo}}</h2> 
+            <h4>Código: {{pelicula.codigo}}</h4>
+            <h4>Precio: {{pelicula.precio}}</h4>  
+
+            <button ion-button color="secondary" (click)="artualizarPelicula(pelicula)"  class="boton">Actualizar</button>          
+            <button ion-button color="danger" (click)="borrarPelicula(pelicula)" class="boton">Borrar</button>      
+
+          </div>   
+
+          </ion-item>
+    </ion-list>
+</ion-content>
